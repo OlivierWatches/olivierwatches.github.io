@@ -53,14 +53,14 @@ $e_subject = 'You\'ve been contacted by ' . $name . '.';
 // You can change this if you feel that you need to.
 // Developers, you may wish to add more fields to the form, in which case you must be sure to add them here.
 
-$e_body = "You have been contacted by: $name" . PHP_EOL . PHP_EOL;
+$e_body = "You have been contacted by: $name from $email" . PHP_EOL . PHP_EOL;
 $e_reply = "E-mail: $email\r\nPhone: $phone";
 $e_content = "Message:\r\n$comments" . PHP_EOL . PHP_EOL;
 
 
 $msg = wordwrap( $e_body . $e_content . $e_reply, 70 );
 
-$headers = "From: $email" . PHP_EOL;
+$headers = "From: noreply@olivier-watches.com" . PHP_EOL;
 $headers .= "Reply-To: $email" . PHP_EOL;
 $headers .= "MIME-Version: 1.0" . PHP_EOL;
 $headers .= "Content-type: text/plain; charset=utf-8" . PHP_EOL;
