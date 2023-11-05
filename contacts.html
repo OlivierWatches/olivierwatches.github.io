@@ -88,7 +88,7 @@
                         </div>
                         <div id="contact-form" class="fl-wrap">
                             <div id="message"></div>
-                            <form class="custom-form" action="php/contact.php" name="contactform" id="contactform">
+                            <form onsubmit="event.preventDefault();" class="custom-form" action="php/contact.php" name="contactform" id="contactform">
                                 <fieldset>
                                     <input type="text" name="name" id="name" placeholder="Your name *" value="">
                                     <input type="text"  name="email" id="email" placeholder="Your email *" value="">
