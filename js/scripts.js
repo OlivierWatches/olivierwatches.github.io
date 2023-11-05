@@ -848,7 +848,8 @@ function initPhotogam() {
         $(this).toggleClass("actdetlink");
     });
     //   Contact form------------------
-    $("#contactform").submit(function () {
+    $("#contactform").submit(function (a) {
+                a.preventDefault();
         var a = $(this).attr("action");
         $("#message").slideUp(750, function () {
             $("#message").hide();
